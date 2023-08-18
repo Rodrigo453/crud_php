@@ -1,5 +1,5 @@
 <?php
-$servidor = "localhost";
+$servidor = "10.217.0.65:3306";
 $usuario = "root";
 $senha = "";
 $dbname = "test";
