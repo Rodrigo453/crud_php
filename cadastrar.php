@@ -10,7 +10,7 @@ session_start(); //Iniciar a sessao
 
 <head>
     <meta charset="utf-8">
-    <title>Cadastrar usuarios</title>
+    <title>Cadastrar usuarioss</title>
 </head>
 
 <body>
