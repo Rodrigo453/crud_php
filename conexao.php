@@ -1,7 +1,7 @@
 <?php
-$servidor = "10.217.0.65:3306";
+$servidor = "mysql:host=localhost;port=3306";
 $usuario = "root";
-$senha = "password";
+$senha = "root";
 $dbname = "banco_php";
 
 //Criar a conexao
