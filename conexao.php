@@ -13,6 +13,6 @@ if(!$conn)
 }
 else
 {
-  echo("Conectado);
+  echo("Conectado");
 }
 ?>
