@@ -1,13 +1,12 @@
 <?php
-$servidor = getenv("MYSQL_SERVICE_HOST");
-$porta = getenv("MYSQL_SERVICE_PORT");
-$usuario = getenv("databaseuser");
-$senha = getenv("databasepassword");
-$dbname = getenv("database");
-//Criar a conexao
-$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+$dbhost     = getenv('MYSQL_DB_HOST');
+$dbport     = getenv('MYSQL_PORT');
+$dbname     = getenv('MYSQL_DB_NAME');
+$dbusername = getenv('MYSQL_USERNAME');
+$dbpassword = getenv('MYSQL_PASSWORD');
+$connectstring = "mysql:host=".$dbhost.";port=".$dbport.";dbname=".$dbname;
 
-if(!$conn)
+if(!$connectstring)
 {
   echo("Não conectado");
 }
