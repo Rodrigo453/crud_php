@@ -10,7 +10,7 @@ include_once "conexao.php";
 
 $sql = "SELECT * FROM usuarios ORDER BY id ";
 
-$result = $connectstring->query($sql);
+$result = $conn->query($sql);
 ?>
 <!DOCTYPE HTML>
 <html lang="pt-br">
