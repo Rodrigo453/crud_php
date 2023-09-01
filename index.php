@@ -1,17 +1,16 @@
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-
-
-
 <?php
 session_start(); //Iniciar a sessao
 
 include_once "conexao.php";
 
-$sql = "SELECT * FROM usuarios ORDER BY id ";
+//$sql = "SELECT * FROM usuarios ORDER BY id ";
+$result = mysqli_query($mysqli,"SELECT * FROM usuarios ORDER BY id");
 
-$result = $this->mysql->$conn->query($sql);
 ?>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
 <!DOCTYPE HTML>
 <html lang="pt-br">
 

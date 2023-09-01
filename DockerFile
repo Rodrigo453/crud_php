@@ -1,4 +1,6 @@
 FROM php:8.3.0beta3-apache
-COPY . .
+RUN apt-get update && apt-get install vim --yes
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+COPY ./* ./
 EXPOSE 3000
 CMD ["php", "-S", "0.0.0.0:3000"]

@@ -4,9 +4,9 @@ $dbport     = getenv('MYSQL_PORT');
 $dbname     = getenv('MYSQL_DB_NAME');
 $dbusername = getenv('MYSQL_USERNAME');
 $dbpassword = getenv('MYSQL_PASSWORD');
-$conn = "mysql:host=".$dbhost.";port=".$dbport.";dbname=".$dbname;
+$mysqli = "mysql:host=".$dbhost.";port=".$dbport.";dbname=".$dbname;
 
-if(!$conn)
+if(!$mysqli)
 {
   echo("Não conectado");
 }
